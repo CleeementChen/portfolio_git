@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Po - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/cropped-Logo.png" rel="icon">
+  <link href="assets/img/cropped-Logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/cropped-Logo.png" alt="Po's Portfolio">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!--
+          <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">English</a></li>
+              <li><a href="#">中文</a></li>
+              <li><a href="#">Français</a></li>
+            </ul>
+          </li> 
+        -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+  <style>
+    .new-page-title {
+      color: #fff;
+      /* 讓文字為白色，增加對比 */
+      background: url('assets/img/project_background.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      padding: 160px 0 80px 0;
+      text-align: center;
+    }
+
+    .new-page-title::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      /* 半透明遮罩，確保文字清楚 */
+      position: absolute;
+      inset: 0;
+    }
+
+    .new-page-title h1,
+    .new-page-title .breadcrumbs {
+      position: relative;
+      z-index: 2;
+    }
+
+    .new-page-title .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .new-page-title .breadcrumbs ol li+li {
+      padding-left: 10px;
+    }
+
+    .new-page-title .breadcrumbs ol li+li::before {
+      content: "/";
+      display: inline-block;
+      padding-right: 10px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="new-page-title dark-background">
+      <div class="container position-relative">
+        <h1>
+          SmartCare: Digital Transformation for Long-Term Healthcare
+        </h1>
+        <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam
+          molestias.</p> -->
+        <br>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/fjcuh/img1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/fjcuh/img2.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/fjcuh/img3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/fjcuh/img4.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/fjcuh/img5.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Project Date</strong>: 09/2021 - 06/2022</li>
+                <!-- <li><strong>Project URL</strong>: https://github.com/CleeementChen/MBS-Thesis</li> -->
+                <li><strong>Skills</strong>: HTML, CSS, JavaScript, PHP, SQL, Data Visualisation</li>
+              </ul>
+            </div>
+          </div>
+          <div style="color: #3c3c3c;" class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <div>
+              <p style="color: #3c3c3c;">In the field of long-term care, there is a widespread and critical issue that cannot be ignored: case
+                managers, during home visits, are unable to record visit details in real time, and most still rely on
+                paper records to complete these tasks. Not only does this make the entire process inefficient, but it
+                also leads to potential errors or data loss. Imagine how devastating it could be if critical information
+                is lost or incorrect when decisions are being made based on that data. That’s why we decided to develop
+                an intelligent system for long-term care case managers to solve these issues — an online responsive home
+                visit system that allows everyone to be much more efficient during home visits.</p>
+
+              <h3>Core Motivation Behind the System</h3>
+              <p style="color: #3c3c3c;">In the current long-term care workflow, case managers are responsible for conducting home visits,
+                filling in visit records, and editing reports after the visit, which are then uploaded to the Ministry
+                of Health and Welfare’s Care Service Management Information Platform. However, this process is still
+                primarily paper-based, slow, and prone to errors. This not only slows down work efficiency but also
+                impacts the quality of care. Our goal is to build a platform that allows real-time data updates and
+                accelerates subsequent data uploads, reducing the workload of case managers and improving the accuracy
+                of the data.</p>
+
+              <h3>Two Key Features of the System</h3>
+              <p style="color: #3c3c3c;">
+                <strong>Real-Time Recording, Update Visit Data Anytime, Anywhere</strong>: Imagine being able to
+                  record visit details during a home visit without flipping through paper records or waiting until
+                  you're back at the office to organise the information. With just a phone or tablet, you can instantly
+                  fill out the visit details, and all data will be saved and updated automatically. This not only
+                  greatly improves work efficiency but also significantly increases the accuracy of the data. No more
+                  worrying about missing information or making mistakes in your records — everything is instantly
+                  reflected, ensuring a seamless workflow. <br><br>
+
+                <strong>One-Click Report Generation, Easy Upload to the Ministry of Health and Welfare
+                    Platform</strong>: Traditionally, after a home visit, case managers spend considerable time
+                  reviewing and organising visit records before inputting the data into the Ministry’s platform. This is
+                  time-consuming and can cause important details to be overlooked. However, our system automatically
+                  converts the visit content into a report format, including case details such as the individual’s name,
+                  gender, and physical or psychological needs. These reports can be downloaded with a single click and
+                  directly uploaded to the platform, eliminating the need for redundant data entry and enhancing both
+                  efficiency and data accuracy.
+              
+
+              <h3 style="color: #3c3c3c;">From Tedious to Simple: Efficiency Gains You Can See</h3>
+              <p style="color: #3c3c3c;">With this system, case managers are no longer burdened by the tedious manual data entry process. They
+                can record home visit details anytime and anywhere, even while in the field, ensuring that all data is
+                quickly and accurately saved. Moreover, the process of generating reports and uploading them to the
+                platform is significantly shortened, allowing case managers to focus more time on the cases that truly
+                need attention. This not only improves work efficiency but also stabilises the quality of care provided.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/CleeementChen" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/po-kuang-chen-23625821a/" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Po - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/cropped-Logo.png" rel="icon">
+  <link href="assets/img/cropped-Logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/cropped-Logo.png" alt="Po's Portfolio">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!--
+          <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">English</a></li>
+              <li><a href="#">中文</a></li>
+              <li><a href="#">Français</a></li>
+            </ul>
+          </li> 
+        -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <style>
+      .new-page-title {
+        color: #fff;
+        /* 讓文字為白色，增加對比 */
+        background: url('assets/img/project_background.jpg') no-repeat center center;
+        background-size: cover;
+        position: relative;
+        padding: 160px 0 80px 0;
+        text-align: center;
+      }
+  
+      .new-page-title::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.4);
+        /* 半透明遮罩，確保文字清楚 */
+        position: absolute;
+        inset: 0;
+      }
+  
+      .new-page-title h1,
+      .new-page-title .breadcrumbs {
+        position: relative;
+        z-index: 2;
+      }
+  
+      .new-page-title .breadcrumbs ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+      }
+  
+      .new-page-title .breadcrumbs ol li+li {
+        padding-left: 10px;
+      }
+  
+      .new-page-title .breadcrumbs ol li+li::before {
+        content: "/";
+        display: inline-block;
+        padding-right: 10px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    </style>
+    <!-- Page Title -->
+    <div class="new-page-title dark-background">
+      <div class="container position-relative">
+        <h1>Collaborative AI Project – Can Machine Learning Predicting Stock Trends?
+        </h1>
+        <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam
+          molestias.</p> -->
+        <br>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/p2.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Project Date</strong>: 01/2024</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/CleeementChen/Project_Algorithm_Trading_Team1" target="_blank">GitHub - Project Algorithm Trading Team1</a></li>
+                <li><strong>Skills</strong>: Python, Data Visualisation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <p style="color: #3c3c3c;">
+              This project takes you behind the scenes of a stock trading strategy, using the ever-popular 
+              <strong>Simple Moving Average (SMA) crossover</strong> method. The mission? To see how well this classic 
+              strategy would have worked on NVIDIA (NVDA) stock between 2013 and 2019. With a starting budget of $50,000 
+              and no fixed deposit rate, the idea is to simulate <strong>buy and sell signals</strong> based on the crossover 
+              of short-term and long-term SMAs—and judge if it could have made you some serious cash.
+            <br><br>
+              Here’s the play: we’ve got two SMAs in action here. One’s got a short window of <strong>62 days</strong>, 
+              while the other stretches over <strong>100 days</strong>. When the short-term SMA crosses above the long-term 
+              one, we get a <strong>buy signal</strong>, hinting that the stock might be on the up. When the short-term SMA 
+              crosses below the long-term, it’s a <strong>sell signal</strong>, suggesting a dip ahead. All of this is tracked 
+              visually on the price data, so you can literally see how your trades would have panned out.
+            <br><br>
+              The goal? To take a look back at history, track how well this strategy could’ve worked, and give insights into 
+              how a trader might have performed over that 6-year window. And, guess what? Our group came out on top, finishing 
+              <strong>first place</strong> with our analysis and execution of this strategy!
+            </p>
+            
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/CleeementChen" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/po-kuang-chen-23625821a/" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
