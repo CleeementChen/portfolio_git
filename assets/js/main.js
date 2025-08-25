@@ -217,4 +217,61 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  // Visitor counter removed per request
+
+  /**
+   * Google Analytics (GA4): load gtag.js only on allowed hostnames and filter unwanted referrals
+   * Measurement ID: G-VRG9858NBY
+   */
+  function initGA() {
+    try {
+      // 1) Allowlist hostnames
+      const allowedHostnames = [
+        'pokuang-chen.com',
+        'www.pokuang-chen.com'
+      ];
+
+      const currentHost = window.location.hostname || '';
+      const isAllowedHost = allowedHostnames.some((h) => currentHost === h || currentHost.endsWith('.' + h));
+      if (!isAllowedHost) return; // Do not init GA on non-allowed hosts
+
+      // 2) Unwanted referral filtering (client-side best-effort)
+      const unwantedReferrers = [
+        // Add or adjust domains you consider spam/unwanted
+        'bottraffic.live',
+        'trafficbot.life',
+        'rank-checker.online',
+        'generalshopping-page.com'
+      ];
+      try {
+        const ref = document.referrer ? new URL(document.referrer).hostname : '';
+        const isUnwanted = unwantedReferrers.some((d) => ref === d || ref.endsWith('.' + d));
+        if (isUnwanted) return; // Skip GA init if referral is unwanted
+      } catch (_) {
+        // ignore URL parse errors
+      }
+
+      // Avoid duplicate injection
+      if (window.__ga4Loaded) return;
+      window.__ga4Loaded = true;
+
+      // Dynamically load gtag.js
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-VRG9858NBY';
+      document.head.appendChild(gaScript);
+
+      // Init dataLayer and config
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      window.gtag = window.gtag || gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-VRG9858NBY');
+    } catch (_e) {
+      // no-op
+    }
+  }
+
+  window.addEventListener('load', initGA);
+
 })();
