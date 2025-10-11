@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Po - Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.jpeg" rel="icon">
+  <link href="assets/img/logo.jpeg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Folio
+  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+  * Updated: Aug 08 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/logo.jpeg" alt="Po's Portfolio">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!--
+          <li class="dropdown"><a href="#"><span>Languages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">English</a></li>
+              <li><a href="#">中文</a></li>
+              <li><a href="#">Français</a></li>
+            </ul>
+          </li> 
+        -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+  <style>
+    .new-page-title {
+      color: #fff;
+      /* 讓文字為白色，增加對比 */
+      background: url('assets/img/project_background.jpeg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      padding: 160px 0 80px 0;
+      text-align: center;
+    }
+
+    .new-page-title::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.4);
+      /* 半透明遮罩，確保文字清楚 */
+      position: absolute;
+      inset: 0;
+    }
+
+    .new-page-title h1,
+    .new-page-title .breadcrumbs {
+      position: relative;
+      z-index: 2;
+    }
+
+    .new-page-title .breadcrumbs ol {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .new-page-title .breadcrumbs ol li+li {
+      padding-left: 10px;
+    }
+
+    .new-page-title .breadcrumbs ol li+li::before {
+      content: "/";
+      display: inline-block;
+      padding-right: 10px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  </style>
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="new-page-title dark-background">
+      <div class="container position-relative">
+          <h1>Digital Orchestration: Where Workflows Meet Brilliance</h1>
+        <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam
+          molestias.</p> -->
+        <br>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/p6.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Project Date</strong>: 10/2025</li>
+                <li><strong>Skills</strong>: n8n</li>
+              </ul>
+            </div>
+          </div>
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+
+            <p style="color: #3c3c3c;">
+              <strong>The Challenge</strong><br>
+              Working in recruitment, I found myself drowning in daily chaos. The industry's relentless pace left me with precious little time to properly connect with candidates, whilst my company's complete absence of standard operating procedures meant every task felt like reinventing the wheel. Each day brought a new puzzle: How do I efficiently screen hundreds of applications? How do I maintain meaningful candidate relationships when I'm juggling multiple roles? The traditional recruitment process was clearly broken – and I was determined to fix it.<br><br>
+              
+              <strong>The Discovery</strong><br>
+              Frustration became my greatest teacher. I realised that the solution wasn't working harder, but working smarter. This revelation led me to <strong>n8n</strong>, the powerful workflow automation platform that would become my secret weapon. Here was a tool that could transform my chaotic recruitment process into a systematic, efficient operation. Suddenly, the impossible seemed achievable: <strong>automated candidate screening</strong>, <strong>personalised follow-up sequences</strong>, and <strong>structured workflows</strong> that actually made sense.<br><br>
+              
+              <strong>The Transformation</strong><br>
+              Implementing n8n didn't just change my workflow – it revolutionised my entire approach to recruitment. Now, candidate management runs like a well-oiled machine: <strong>applications are automatically sorted and prioritised</strong>, <strong>personalised communications are sent at optimal times</strong>, and <strong>every interaction is tracked and measured</strong>. What once took hours now happens in minutes, freeing me to focus on what truly matters – building genuine connections with talented individuals.<br><br>
+              
+              <strong>The Impact</strong><br>
+              This project represents more than just technical achievement; it's proof that automation can humanise recruitment rather than depersonalise it. By eliminating repetitive tasks, I've gained the time and mental space to engage authentically with candidates, resulting in <strong>better placements and stronger professional relationships</strong>. The value extends beyond efficiency – it's about creating a recruitment experience that works for everyone involved, transforming chaos into clarity one workflow at a time.
+            </p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/CleeementChen" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/po-kuang-chen-23625821a/" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
